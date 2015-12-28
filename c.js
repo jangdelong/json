@@ -284,6 +284,5 @@ function SelectAllClicked() {
 
     if (!!range.select) range.select($('Canvas'));
     else window.getSelection().addRange(range);
-
 }
 
