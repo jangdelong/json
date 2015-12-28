@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>原生json格式化及高亮</title>
+<meta charset="utf-8" >
+<meta name="description" content="json, 格式化, 高亮" >
+<meta name="keywords" content="json, 格式化, 高亮" >
+<script src="c.js"></script>
+<link rel="stylesheet" href="s.css" >
+</head>
+
+<body>
+<!-- 内容输入部分 -->
+<div class="HeadersRow">
+    <h3 id="HeaderSubTitle">JSON格式化及高亮:</h3>
+    <textarea id="RawJson"></textarea>
+</div>
+
+<!-- 控件操作部分 -->
+<div id="ControlsRow">
+    <input type="Button" value="格式化" onclick="Process()" />
+    <span id="TabSizeHolder">
+        缩进量
+        <select id="TabSize" onchange="TabSizeChanged()">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </span>
+    <label for="QuoteKeys">
+        <input type="checkbox" id="QuoteKeys" onchange="QuoteKeysClicked()" checked >
+        引号
+    </label>
+    <a href="javascript: SelectAllClicked();">全选</a>
+
+    <span id="CollapsibleViewHolder" >
+        <label for="CollapsibleView">
+            <input type="checkbox" id="CollapsibleView" onchange="CollapsibleViewClicked()" checked >
+            显示控制
+        </label>
+    </span>
+    <span id="CollapsibleViewDetail">
+        <a href="javascript: ExpandAllClicked();">展开</a>
+        <a href="javascript: CollapseAllClicked();">叠起</a>
+        <a href="javascript: CollapseLevel(3);">2级</a>
+        <a href="javascript: CollapseLevel(4);">3级</a>
+        <a href="javascript: CollapseLevel(5);">4级</a>
+        <a href="javascript: CollapseLevel(6);">5级</a>
+        <a href="javascript: CollapseLevel(7);">6级</a>
+        <a href="javascript: CollapseLevel(8);">7级</a>
+        <a href="javascript: CollapseLevel(9);">8级</a>
+    </span>
+</div>
+
+<!-- 内容输出部分 -->
+<div id="Canvas" class="Canvas"></div>
+
+</body>
+</html>
