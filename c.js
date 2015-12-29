@@ -126,6 +126,18 @@ function ProcessObject(obj, indent, addComma, isArray, isPropertyContent) {
 
 }
 
+/**
+ * 格式化字符
+ * @param {string}  literal  字符
+ * @param {string}  quote    引号
+ * @param {string}  comma    逗号
+ * @param {string}  indent   缩进
+ * @param {boolean} isArray  是否数组
+ * @param {string}  style    样式
+ * @returns {string}
+ * @constructor
+ *
+ */
 
 function FormatLiteral(literal, quote, comma, indent, isArray, style) {
     if (typeof literal === 'string')
