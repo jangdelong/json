@@ -176,7 +176,10 @@ function CollapsibleViewClicked() {
     $('CollapsibleViewDetail').style.visibility = $('CollapsibleView').checked ? 'visible' : 'hidden';
     Process();
 }
-
+/**
+ * 格式化结果属性是否加引号操作
+ * @constructor
+ */
 function QuoteKeysClicked() {
     QuoteKeys = $('QuoteKeys').checked;
     Process();
@@ -225,7 +228,11 @@ function TraverseChildren(element, func, depth) {
     }
     func(element, depth);
 }
-
+/**
+ * 折叠操作
+ * @param {object}  img HTML图片元素
+ * @constructor
+ */
 function ExpImgClicked(img) {
 
     var container = img.parentNode.nextSibling;
@@ -265,6 +272,10 @@ function TabSizeChanged() {
     Process();
 }
 
+/**
+ * 设置tab
+ * @constructor
+ */
 function SetTab() {
     var select = $('TabSize');
     TAB = MultiplyString(parseInt(select.options[select.selectedIndex].value), window.SINGLE_TAB);
