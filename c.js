@@ -131,7 +131,7 @@ function ProcessObject(obj, indent, addComma, isArray, isPropertyContent) {
  * @param {string}  literal  字符
  * @param {string}  quote    引号
  * @param {string}  comma    逗号
- * @param {string}  indent   缩进
+ * @param {number}  indent   缩进
  * @param {boolean} isArray  是否数组
  * @param {string}  style    样式
  * @returns {string}
@@ -145,7 +145,13 @@ function FormatLiteral(literal, quote, comma, indent, isArray, style) {
     if (isArray) str = GetRow(indent, str);
     return str;
 }
-
+/**
+ * 格式化函数
+ * @param {number} indent   缩进
+ * @param {object} obj      对象
+ * @returns {string}
+ *
+ */
 function FormatFunction(indent, obj) {
     var tabs = '';
     for (var i = 0; i < indent; i++) tabs += TAB;
