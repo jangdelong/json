@@ -135,7 +135,6 @@ function ProcessObject(obj, indent, addComma, isArray, isPropertyContent) {
  * @param {boolean} isArray  是否数组
  * @param {string}  style    样式
  * @returns {string}
- * @constructor
  *
  */
 function FormatLiteral(literal, quote, comma, indent, isArray, style) {
