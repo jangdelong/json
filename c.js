@@ -250,7 +250,11 @@ function ExpImgClicked(img) {
 
     img.src = src;
 }
-
+/**
+ * 折叠对象层次
+ * @param {string}  level  折叠层次
+ * @constructor
+ */
 function CollapseLevel(level) {
 
     EnsureIsPopulated();
