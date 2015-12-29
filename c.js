@@ -21,7 +21,7 @@ function IsArray(obj) {
 }
 
 /**
- * 格式化
+ * 执行代码格式化
  *
  */
 function Process() {
