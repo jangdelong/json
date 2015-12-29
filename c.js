@@ -138,7 +138,6 @@ function ProcessObject(obj, indent, addComma, isArray, isPropertyContent) {
  * @constructor
  *
  */
-
 function FormatLiteral(literal, quote, comma, indent, isArray, style) {
     if (typeof literal === 'string')
         literal = literal.split('<').join('&lt;').split('>').join('&gt;');
