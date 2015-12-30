@@ -274,7 +274,10 @@ function CollapseLevel(level) {
         }
     }, 0);
 }
-
+/**
+ * 缩进控制
+ * @constructor
+ */
 function TabSizeChanged() {
     Process();
 }
