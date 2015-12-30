@@ -301,6 +301,10 @@ function MultiplyString(num, str) {
     return sb.join('');
 }
 
+/**
+ * 全选
+ * @constructor
+ */
 function SelectAllClicked() {
     if (!!document.selection && !!document.selection.empty) {
         document.selection.empty();
