@@ -8,13 +8,13 @@
     _regexpObj    = new RegExp();
 /**
  * 获取DOM元素
- * @param {string} id  页面
+ * @param {String} id  页面
  */
 function $(id) { return document.getElementById(id); }
 /**
  * 判断是否是数组
- * @param   {object|string|number}  obj  数组或其他对象参数
- * @return  {boolean}
+ * @param   {Array|String|Number}  obj  数组或其他对象参数
+ * @return  {Boolean}
  */
 function IsArray(obj) {
     return  obj && typeof obj === 'object' && typeof obj.length === 'number' && !(obj.propertyIsEnumerable('length'));
@@ -48,11 +48,11 @@ function Process() {
 
 /**
  * 处理对象类型数据
- * @param {object}   obj                待格式化的对象
- * @param {number}   indent             缩进
- * @param {boolean}  addComma           是否加逗号
- * @param {boolean}  isArray            是否是数组
- * @param {boolean}  isPropertyContent  是否为键值
+ * @param {Object}   obj                待格式化的对象
+ * @param {Number}   indent             缩进
+ * @param {Boolean}  addComma           是否加逗号
+ * @param {Boolean}  isArray            是否是数组
+ * @param {Boolean}  isPropertyContent  是否为键值
  *
  */
 function ProcessObject(obj, indent, addComma, isArray, isPropertyContent) {
@@ -128,13 +128,13 @@ function ProcessObject(obj, indent, addComma, isArray, isPropertyContent) {
 
 /**
  * 格式化字符
- * @param {string}  literal  字符
- * @param {string}  quote    引号
- * @param {string}  comma    逗号
- * @param {number}  indent   缩进
- * @param {boolean} isArray  是否数组
- * @param {string}  style    样式
- * @returns {string}
+ * @param {String}  literal  字符
+ * @param {String}  quote    引号
+ * @param {String}  comma    逗号
+ * @param {Number}  indent   缩进
+ * @param {Boolean} isArray  是否数组
+ * @param {String}  style    样式
+ * @returns {String}
  *
  */
 function FormatLiteral(literal, quote, comma, indent, isArray, style) {
@@ -147,9 +147,9 @@ function FormatLiteral(literal, quote, comma, indent, isArray, style) {
 }
 /**
  * 格式化函数
- * @param {number} indent   缩进
- * @param {object} obj      对象
- * @returns {string}
+ * @param {Number} indent   缩进
+ * @param {Object} obj      对象
+ * @returns {String}
  *
  */
 function FormatFunction(indent, obj) {
@@ -230,7 +230,7 @@ function TraverseChildren(element, func, depth) {
 }
 /**
  * 折叠操作
- * @param {object}  img HTML图片元素
+ * @param {Object}  img HTML图片元素
  * @constructor
  */
 function ExpImgClicked(img) {
@@ -252,7 +252,7 @@ function ExpImgClicked(img) {
 }
 /**
  * 折叠对象层次
- * @param {string}  level  折叠层次
+ * @param {String}  level  折叠层次
  * @constructor
  */
 function CollapseLevel(level) {
