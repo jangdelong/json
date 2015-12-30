@@ -188,6 +188,10 @@ function QuoteKeysClicked() {
     Process();
 }
 
+/**
+ * 收缩JSON
+ * @constructor
+ */
 function CollapseAllClicked() {
     EnsureIsPopulated();
 
@@ -201,6 +205,10 @@ function CollapseAllClicked() {
 
 }
 
+/**
+ * 展开JSON
+ * @constructor
+ */
 function ExpandAllClicked() {
     EnsureIsPopulated();
 
@@ -274,7 +282,10 @@ function CollapseLevel(level) {
         }
     }, 0);
 }
-
+/**
+ * 缩进控制
+ * @constructor
+ */
 function TabSizeChanged() {
     Process();
 }
