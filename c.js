@@ -171,7 +171,10 @@ function GetRow(indent, data, isPropertyContent) {
 
     return tabs + data;
 }
-
+/**
+ * 显示控制
+ * @constructor
+ */
 function CollapsibleViewClicked() {
     $('CollapsibleViewDetail').style.visibility = $('CollapsibleView').checked ? 'visible' : 'hidden';
     Process();
