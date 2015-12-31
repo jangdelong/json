@@ -299,10 +299,21 @@ function SetTab() {
     TAB = MultiplyString(parseInt(select.options[select.selectedIndex].value), window.SINGLE_TAB);
 }
 
+/**
+ * 格式化
+ * @constructor
+ */
 function EnsureIsPopulated() {
     if (!$('Canvas').innerHTML && !!$('RawJson').value) Process();
 }
 
+/**
+ *
+ * @param   {Number}    num  字符串个数(其实是空格个数)
+ * @param   {String}    str  待拼凑的字符串(其实是缩进空格单位)
+ * @returns {String}
+ * @constructor
+ */
 function MultiplyString(num, str) {
     var sb = [];
 
