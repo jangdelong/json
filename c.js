@@ -163,6 +163,14 @@ function FormatFunction(indent, obj) {
     return str;
 }
 
+/**
+ *
+ * @param {Number}  indent            缩进个数
+ * @param {Object}  data              JSON数据
+ * @param {Boolean} isPropertyContent 是否为键值
+ * @returns {String}
+ * @constructor
+ */
 function GetRow(indent, data, isPropertyContent) {
     var tabs = '';
     for (var i = 0; i < indent && !isPropertyContent; i++) tabs += TAB;
