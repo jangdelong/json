@@ -12,8 +12,8 @@
     font-family: Lucida Console, Georgia;
     font-size: 13px;
     background-color: #ECECEC;
-    color: #000000;
-	border:solid 1px #CECECE;
+    color: #000;
+	border: 1px solid #CECECE;
 }
 
 .ObjectBrace {
@@ -52,16 +52,16 @@
 }
 
 .Comma {
-    color: #000000;
+    color: #000;
     font-weight: bold;
 }
 
-pre.CodeContainer {
+.CodeContainer {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-pre.CodeContainer img {
+.CodeContainer img {
     cursor: pointer;
     border: none;
     margin-bottom: -1px;
