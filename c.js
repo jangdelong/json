@@ -235,7 +235,8 @@ function MakeContentVisible(element, visible) {
 
     if (!!img.tagName && img.tagName.toUpperCase() === 'IMG') {
         element.style.display = visible ? 'inline' : 'none';
-        element.previousSibling.firstChild.src = visible ? window.ImgExpanded : window.ImgCollapsed;
+        // 切换加号和减号
+        element.previousSibling.firstChild.src = visible ? ImgExpanded : ImgCollapsed;
 
     }
 }
