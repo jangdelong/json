@@ -165,7 +165,7 @@ function FormatFunction(indent, obj) {
 }
 
 /**
- *
+ * 获取行
  * @param {Number}  indent            缩进个数
  * @param {Object}  data              JSON数据
  * @param {Boolean} isPropertyContent 是否为键值
