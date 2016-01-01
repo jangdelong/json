@@ -227,7 +227,12 @@ function ExpandAllClicked() {
     }, 0);
 
 }
-
+/**
+ * 显示和隐藏内容
+ * @param  {Object}  element
+ * @param  {Boolean} visible
+ * @constructor
+ */
 function MakeContentVisible(element, visible) {
     var img = element.previousSibling.firstChild;
 
