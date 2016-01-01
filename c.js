@@ -6,6 +6,7 @@
     IsCollapsible = true,
     _dateObj      = new Date(),
     _regexpObj    = new RegExp();
+
 /**
  * 获取DOM元素
  * @param {String} id  页面
