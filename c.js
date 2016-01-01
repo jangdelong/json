@@ -12,6 +12,7 @@
  * @param {String} id  页面
  */
 function $(id) { return document.getElementById(id); }
+
 /**
  * 判断是否是数组
  * @param   {Array|String|Number}  obj  数组或其他对象参数
@@ -23,7 +24,7 @@ function IsArray(obj) {
 
 /**
  * 执行代码格式化
- *
+ * @constructor
  */
 function Process() {
     SetTab();
@@ -91,13 +92,9 @@ function ProcessObject(obj, indent, addComma, isArray, isPropertyContent) {
                 html += GetRow(indent, "<span class='ObjectBrace'>{</span>"+clpsHtml, isPropertyContent);
 
                 var j = 0;
-
                 for (var prop in obj) {
-
                     var quote = QuoteKeys ? '"' : '';
-
                     html += GetRow(indent + 1, '<span class="PropertyName">' + quote + prop + quote + '</span>: ' + ProcessObject(obj[prop], indent + 1, ++j < numProps, false, true));
-
                 }
 
                 clpsHtml = IsCollapsible ? '</span>' : '';
@@ -243,7 +240,6 @@ function MakeContentVisible(element, visible) {
 }
 
 function TraverseChildren(element, func, depth) {
-
     for (var i = 0, len = element.childNodes.length; i < len; i++) {
         TraverseChildren(element.childNodes[i], func, depth + 1);
     }
@@ -306,7 +302,7 @@ function TabSizeChanged() {
  */
 function SetTab() {
     var select = $('TabSize');
-    TAB = MultiplyString(parseInt(select.options[select.selectedIndex].value), window.SINGLE_TAB);
+    TAB = MultiplyString(parseInt(select.options[select.selectedIndex].value), SINGLE_TAB);
 }
 
 /**
