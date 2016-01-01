@@ -314,11 +314,12 @@ function SetTab() {
  * @constructor
  */
 function EnsureIsPopulated() {
+    // 如果输入不为空、输出为空时
     if (!$('Canvas').innerHTML && !!$('RawJson').value) Process();
 }
 
 /**
- *
+ * 拼凑字符串
  * @param   {Number}    num  字符串个数(其实是空格个数)
  * @param   {String}    str  待拼凑的字符串(其实是缩进空格单位)
  * @returns {String}
